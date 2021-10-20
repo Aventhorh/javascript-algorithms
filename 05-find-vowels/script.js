@@ -10,7 +10,15 @@
 */
 
 function findVowels(str) {
-    // Напишите код здесь
+    let letter = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е',
+        'А', 'Я', 'О', 'Ё', 'У', 'Ю', 'Ы', 'И', 'Э', 'Е'];
+    let result = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (letter.includes(str[i])) {
+            result++;
+        }
+    }
+    return result;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

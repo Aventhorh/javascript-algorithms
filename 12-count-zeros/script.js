@@ -7,7 +7,20 @@
 */
 
 function countZeros(n) {
-    // Напишите код здесь
+    if (n === 0) {
+        return 0;
+    }
+    let nulls = 0;
+    if (n > 9) {
+        nulls = countZeros(n - 1);
+    }
+    while (n > 0) {
+        if (n % 10 === 0) {
+            nulls++;
+        }
+        n = Math.floor(n / 10);
+    }
+    return nulls;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

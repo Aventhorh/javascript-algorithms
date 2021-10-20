@@ -8,9 +8,14 @@
 */
 
 function uniq(arr) {
-    // Напишите код здесь
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!newArr.includes(arr[i])) {
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
 }
-
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(uniq([1, 2, 5, 4, 2])); // [1, 2, 5, 4]
