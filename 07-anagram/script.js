@@ -9,7 +9,7 @@
 */
 
 function anagram(str1, str2) {
-    if (str1.length != str2.length || str1.toLowerCase() === str2.toLowerCase()) {
+    if (str1.length !== str2.length || str1.toLowerCase() === str2.toLowerCase()) {
         return false;
     }
     return str1.toLowerCase().split('').sort().join('') === str2.toLowerCase().split('').sort().join('');

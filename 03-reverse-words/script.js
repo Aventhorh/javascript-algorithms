@@ -9,8 +9,7 @@
 */
 
 function reverseWords(str) {
-    let lineReverse = str.split(" ").reverse().join(" "); // разделили в новый массив, развернули, склеили обратно с пробелом
-    return lineReverse;
+    return str.split(" ").reverse().join(" ");
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

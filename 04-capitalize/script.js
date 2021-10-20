@@ -12,11 +12,7 @@ function capitalize(str) {
         let letter = str[i];
         if (str[i - 1] === " ") {
             string += letter.toUpperCase();
-        } else if (str[i - 1] === undefined) {
-            string += letter.toUpperCase();
-        } else if (str[i - 1] === null) {
-            string += letter.toUpperCase();
-        } else if (str[i - 1] === 0) {
+        } else if (!str[i - 1]) {
             string += letter.toUpperCase();
         } else {
             string += letter;
